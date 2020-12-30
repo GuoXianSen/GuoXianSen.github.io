@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://guoxiansen.github.io/2020/12/13/%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8/</loc>
+    
+    <lastmod>2020-12-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://guoxiansen.github.io/2020/12/30/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2020-12-30</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://guoxiansen.github.io/2020/12/13/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
     
     <lastmod>2020-12-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://guoxiansen.github.io/2020/12/13/%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8/</loc>
-    
-    <lastmod>2020-12-28</lastmod>
     
   </url>
   
@@ -86,6 +86,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://guoxiansen.github.io/tags/%E6%95%88%E7%8E%87-PicGo-Typora-Markdown/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 
   

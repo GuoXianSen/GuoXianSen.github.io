@@ -6,7 +6,7 @@
   <link href="https://guoxiansen.github.io/atom.xml" rel="self"/>
   
   <link href="https://guoxiansen.github.io/"/>
-  <updated>2021-01-03T09:17:07.831Z</updated>
+  <updated>2021-01-05T15:01:25.414Z</updated>
   <id>https://guoxiansen.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>拍立得使用指南</title>
+    <link href="https://guoxiansen.github.io/2021/01/05/%E6%8B%8D%E7%AB%8B%E5%BE%97%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
+    <id>https://guoxiansen.github.io/2021/01/05/%E6%8B%8D%E7%AB%8B%E5%BE%97%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</id>
+    <published>2021-01-05T14:52:08.000Z</published>
+    <updated>2021-01-05T15:01:25.414Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="拍立得使用指南"><a href="#拍立得使用指南" class="headerlink" title="拍立得使用指南"></a>拍立得使用指南</h1><p><img src="https://gitee.com/clay_guo/pic-bed/raw/master/img/image-20210105225559713.png" alt="image-20210105225559713"></p><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>拍立得，顾名思义即拍摄完就可以马上得到照片的相机，它需要专门为这款相机配套的相纸。</p><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>照片是由一张可以感光的片基和一袋可以使曝光的片基显现影像的药水组成。按动开门后，片基感光。相机“推动”照片出的同时，压破药水包，是片基显影。 不要甩，是怕药水不匀，影响成像。不要放在阳光下，是避免照片很快褪色。</p><h2 id="主要品牌"><a href="#主要品牌" class="headerlink" title="主要品牌"></a>主要品牌</h2><ul><li>富士</li><li>LOMO</li><li>宝丽来</li><li>徕卡</li></ul><h2 id="热门产品"><a href="#热门产品" class="headerlink" title="热门产品"></a>热门产品</h2><p>富士mini9</p><p>富士mini70</p><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><p><img src="https://gitee.com/clay_guo/pic-bed/raw/master/img/image-20210105225035621.png" alt="image-20210105225035621"></p><p><img src="https://gitee.com/clay_guo/pic-bed/raw/master/img/image-20210105225006896.png" alt="image-20210105225006896"></p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol><li>成像过程中不要甩动相纸，拍完照之后不要摇晃照片，否则会导致液体不均匀，需要等待片刻。</li><li>不要让相纸靠近热源 相纸通过X光设备可能会出现雾化现象，所以在过安检时候可以要求人工检查 </li><li>不要揭开相纸盒上的遮光板 </li><li>不要对着镜子或者强反光的表面拍摄（拍摄会导致成像上有黑色噪点） 注意在阴凉处保存相纸</li><li>富士的拍立得在底片没有用完之前，不要打开后盖，否则计数器会清零。</li></ol><p><img src="https://gitee.com/clay_guo/pic-bed/raw/master/img/image-20210105225226456.png" alt="image-20210105225226456"></p><p><img src="https://gitee.com/clay_guo/pic-bed/raw/master/img/image-20210105225243874.png" alt="image-20210105225243874"></p><h2 id="相关视频"><a href="#相关视频" class="headerlink" title="相关视频"></a>相关视频</h2><p><a href="https://www.bilibili.com/video/BV1E7411A7rM?from=search&seid=10992849022163437311">富士拍立得 mini9开箱 | 新手入坑第一拍</a></p><p><a href="https://www.bilibili.com/video/BV18x411n732">「拍立得入坑指南」文艺少女的必备装逼利器！</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;拍立得使用指南&quot;&gt;&lt;a href=&quot;#拍立得使用指南&quot; class=&quot;headerlink&quot; title=&quot;拍立得使用指南&quot;&gt;&lt;/a&gt;拍立得使用指南&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://gitee.com/clay_guo/pic-bed/raw/m</summary>
+      
+    
+    
+    
+    
+    <category term="生活" scheme="https://guoxiansen.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker学习笔记</title>

@@ -6,7 +6,7 @@
   <link href="https://guoxiansen.github.io/atom.xml" rel="self"/>
   
   <link href="https://guoxiansen.github.io/"/>
-  <updated>2021-01-05T15:01:25.414Z</updated>
+  <updated>2021-01-13T14:32:53.679Z</updated>
   <id>https://guoxiansen.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浅谈面向对象、面向过程和面向函数</title>
+    <link href="https://guoxiansen.github.io/2021/01/13/%E6%B5%85%E8%B0%88%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E3%80%81%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E5%92%8C%E9%9D%A2%E5%90%91%E5%87%BD%E6%95%B0/"/>
+    <id>https://guoxiansen.github.io/2021/01/13/%E6%B5%85%E8%B0%88%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E3%80%81%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E5%92%8C%E9%9D%A2%E5%90%91%E5%87%BD%E6%95%B0/</id>
+    <published>2021-01-13T14:27:27.000Z</published>
+    <updated>2021-01-13T14:32:53.679Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="浅谈面向对象、面向过程和面向函数"><a href="#浅谈面向对象、面向过程和面向函数" class="headerlink" title="浅谈面向对象、面向过程和面向函数"></a>浅谈面向对象、面向过程和面向函数</h1><blockquote><p>在前天的面试中，我被面试官（某位公司的SRE工程师）问道：“请谈谈你对面向对象、面向过程和面向函数的理解”。细细一想，自己大学四年的学习下来，也确实从大一的C语言学到大二的C#，再到大三的Java以及自己在课余时间学习的Python，有很多种编程语言，但是仔细一想，确实没有仔细思考过，他们之间的区别，只是仅仅在学习之后拿过来用，没有进行深度的思考，往往在将来进行开发选用某种语言的时候不那么明确，会带来不必要的麻烦。那么今天就来细说一下什么是面向对象、面向过程以及面向函数。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;浅谈面向对象、面向过程和面向函数&quot;&gt;&lt;a href=&quot;#浅谈面向对象、面向过程和面向函数&quot; class=&quot;headerlink&quot; title=&quot;浅谈面向对象、面向过程和面向函数&quot;&gt;&lt;/a&gt;浅谈面向对象、面向过程和面向函数&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;在</summary>
+      
+    
+    
+    
+    
+    <category term="OOP" scheme="https://guoxiansen.github.io/tags/OOP/"/>
+    
+    <category term="面向对象" scheme="https://guoxiansen.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>拍立得使用指南</title>

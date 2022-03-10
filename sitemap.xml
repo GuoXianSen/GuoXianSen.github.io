@@ -186,6 +186,13 @@
   </url>
   
   <url>
+    <loc>https://guoxiansen.github.io/tags/Python/</loc>
+    <lastmod>2022-03-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://guoxiansen.github.io/tags/%E6%95%88%E7%8E%87/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>daily</changefreq>
@@ -215,13 +222,6 @@
   
   <url>
     <loc>https://guoxiansen.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-03-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoxiansen.github.io/tags/Python/</loc>
     <lastmod>2022-03-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

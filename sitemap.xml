@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://guoxiansen.github.io/2024/03/14/Redis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2024-03-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://guoxiansen.github.io/2024/03/12/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2024-03-25</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://guoxiansen.github.io/2024/03/15/MySQL%E7%B4%A2%E5%BC%95/</loc>
     
     <lastmod>2024-03-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://guoxiansen.github.io/2024/03/14/Redis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    
-    <lastmod>2024-03-16</lastmod>
     
   </url>
   

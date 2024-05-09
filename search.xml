@@ -42,11 +42,11 @@
     
     
     <entry>
-      <title>为什么Cookies无法防止CSRF攻击而Token可以？</title>
+      <title>为什么Cookie无法防止CSRF攻击而Token可以？</title>
       <link href="2024/04/27/%E4%B8%BA%E4%BB%80%E4%B9%88Cookie%E6%97%A0%E6%B3%95%E9%98%B2%E6%AD%A2CSRF%E6%94%BB%E5%87%BB%E8%80%8CToken%E5%8F%AF%E4%BB%A5%EF%BC%9F/"/>
       <url>2024/04/27/%E4%B8%BA%E4%BB%80%E4%B9%88Cookie%E6%97%A0%E6%B3%95%E9%98%B2%E6%AD%A2CSRF%E6%94%BB%E5%87%BB%E8%80%8CToken%E5%8F%AF%E4%BB%A5%EF%BC%9F/</url>
       
-        <content type="html"><![CDATA[<p>传统方案：使用Cookie</p><p>通常Cookie会搭配Session使用，由于http请求是无状态的，服务器需要识别客户端的身份，例如常见的购物车功能，所以使用SessionID</p><p>可以使用cookie在用户登录之后保存用户的登录状态</p>]]></content>
+        <content type="html"><![CDATA[<p>CSRF（Cross Site Request Forgery）：跨站请求伪造，属于网络攻击领领域范畴。相比于SQL脚本注入、XSS攻击等安全攻击方式，CSRF的知名度并没有他们高，但是它确实是我们开发系统时必须要考虑的安全隐患。</p><p>什么是CSRF呢？</p><p>简单来说，就是黑客利用你的身份信息去做一些非法的事情，例如将你的钱转走。</p><p>CSRF攻击需要依赖于Cookie，Session</p><p>传统方案：使用Cookie</p><p>通常Cookie会搭配Session使用，由于http请求是无状态的，服务器需要识别客户端的身份，例如常见的购物车功能，所以使用SessionID</p><p>可以使用cookie在用户登录之后保存用户的登录状态</p>]]></content>
       
       
       

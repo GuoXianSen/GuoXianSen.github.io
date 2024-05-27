@@ -6,7 +6,7 @@
   <link href="https://guoxiansen.github.io/atom.xml" rel="self"/>
   
   <link href="https://guoxiansen.github.io/"/>
-  <updated>2024-05-26T03:39:37.296Z</updated>
+  <updated>2024-05-27T13:22:04.131Z</updated>
   <id>https://guoxiansen.github.io/</id>
   
   <author>
@@ -17,22 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>栈与队列</title>
-    <link href="https://guoxiansen.github.io/2024/05/26/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/"/>
-    <id>https://guoxiansen.github.io/2024/05/26/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/</id>
+    <title>堆</title>
+    <link href="https://guoxiansen.github.io/2024/05/26/%E5%A0%86/"/>
+    <id>https://guoxiansen.github.io/2024/05/26/%E5%A0%86/</id>
     <published>2024-05-26T01:46:15.000Z</published>
-    <updated>2024-05-26T03:39:37.296Z</updated>
+    <updated>2024-05-27T13:22:04.131Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h1><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><h2 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h2><h2 id="单调队列"><a href="#单调队列" class="headerlink" title="单调队列"></a>单调队列</h2><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><p>堆是一种基于树结构的数据结构，具有高效的插入和删除操作。</p><p>堆本质是完全二叉树，常用的两种堆分别是：</p><ul><li>最大堆：父节点的值小于或等于其子节点的值</li><li>最小堆：父节点的值大于或等于其子节点的值</li></ul><p>堆通常用于实现优先队列或者堆排序等算法</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> heapq</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建最小堆</span></span><br><span class="line">heap = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">2</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">3</span>, <span class="number">5</span>]</span><br><span class="line">heapq.heapify(heap)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 插入元素</span></span><br><span class="line">heapq.heappush(heap, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 弹出最小元素</span></span><br><span class="line">min_element = heapq.heappop(heap)</span><br><span class="line"></span><br><span class="line">print(<span class="string">&quot;Min Heap:&quot;</span>, heap)</span><br><span class="line">print(<span class="string">&quot;Min Element:&quot;</span>, min_element)</span><br></pre></td></tr></table></figure><h2 id="优先队列-堆"><a href="#优先队列-堆" class="headerlink" title="优先队列/堆"></a>优先队列/堆</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h1><h2 id="堆-1"><a href="#堆-1" class="headerlink" title="堆"></a>堆</h2><p>堆是一种基于树结构的数据结构，具有高效的插入和删除操作。</p><p>堆本质是完全二叉树，常用的两种堆分别是：</p><ul><li>最大堆：父节点的值小于或等于其子节点的值</li><li>最小堆：父节点的值大于或等于其子节点的值</li></ul><p>堆通常用于实现优先队列或者堆排序等算法</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> heapq</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建最小堆</span></span><br><span class="line">heap = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">2</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">3</span>, <span class="number">5</span>]</span><br><span class="line">heapq.heapify(heap)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 插入元素</span></span><br><span class="line">heapq.heappush(heap, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 弹出最小元素</span></span><br><span class="line">min_element = heapq.heappop(heap)</span><br><span class="line"></span><br><span class="line">print(<span class="string">&quot;Min Heap:&quot;</span>, heap)</span><br><span class="line">print(<span class="string">&quot;Min Element:&quot;</span>, min_element)</span><br></pre></td></tr></table></figure><h2 id="优先队列-堆"><a href="#优先队列-堆" class="headerlink" title="优先队列/堆"></a>优先队列/堆</h2><h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;栈与队列&quot;&gt;&lt;a href=&quot;#栈与队列&quot; class=&quot;headerlink&quot; title=&quot;栈与队列&quot;&gt;&lt;/a&gt;栈与队列&lt;/h1&gt;&lt;h2 id=&quot;栈&quot;&gt;&lt;a href=&quot;#栈&quot; class=&quot;headerlink&quot; title=&quot;栈&quot;&gt;&lt;/a&gt;栈&lt;/h2&gt;&lt;h</summary>
+    <summary type="html">&lt;h1 id=&quot;堆&quot;&gt;&lt;a href=&quot;#堆&quot; class=&quot;headerlink&quot; title=&quot;堆&quot;&gt;&lt;/a&gt;堆&lt;/h1&gt;&lt;h2 id=&quot;堆-1&quot;&gt;&lt;a href=&quot;#堆-1&quot; class=&quot;headerlink&quot; title=&quot;堆&quot;&gt;&lt;/a&gt;堆&lt;/h2&gt;&lt;p&gt;堆是一种基于树</summary>
       
     
     
     
+    
+    <category term="LeetCode" scheme="https://guoxiansen.github.io/tags/LeetCode/"/>
+    
+    <category term="堆" scheme="https://guoxiansen.github.io/tags/%E5%A0%86/"/>
     
   </entry>
   

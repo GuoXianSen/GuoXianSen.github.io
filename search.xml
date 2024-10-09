@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>HashMap的遍历方式</title>
+      <link href="2024/10/06/HashMap%E7%9A%84%E9%81%8D%E5%8E%86%E6%96%B9%E5%BC%8F/"/>
+      <url>2024/10/06/HashMap%E7%9A%84%E9%81%8D%E5%8E%86%E6%96%B9%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HashMap的遍历方式"><a href="#HashMap的遍历方式" class="headerlink" title="HashMap的遍历方式"></a>HashMap的遍历方式</h1><h2 id="EntrySet遍历"><a href="#EntrySet遍历" class="headerlink" title="EntrySet遍历"></a>EntrySet遍历</h2><h2 id="KeySet遍历"><a href="#KeySet遍历" class="headerlink" title="KeySet遍历"></a>KeySet遍历</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见设计模式总结</title>
+      <link href="2024/10/04/%E5%B8%B8%E8%A7%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/"/>
+      <url>2024/10/04/%E5%B8%B8%E8%A7%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<h1 id="常见设计模式总结"><a href="#常见设计模式总结" class="headerlink" title="常见设计模式总结"></a>常见设计模式总结</h1><p><img src="https://cdn.jsdelivr.net/gh/GuoXianSen/pic-bed@main/imgs/202410040133406.png" alt="eded52fd-c04c-47c2-b15a-188cfcb95dde"></p><p>Spring中和JAVA IO中就涉及到设计模式，具体包括以下几个：</p><h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><h2 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h2><p>双重锁检查法单例模式</p><h2 id="策略模式"><a href="#策略模式" class="headerlink" title="策略模式"></a>策略模式</h2><h2 id="装饰器模式"><a href="#装饰器模式" class="headerlink" title="装饰器模式"></a>装饰器模式</h2><p>装饰器模式是指在不改变原有对象的情况下扩展功能。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 设计模式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>LeetCode Hot100题解</title>
       <link href="2024/08/11/LeetCode-Hot100%E9%A2%98%E8%A7%A3/"/>
       <url>2024/08/11/LeetCode-Hot100%E9%A2%98%E8%A7%A3/</url>
@@ -465,25 +497,6 @@
             <tag> LeetCode </tag>
             
             <tag> 哈希表 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>常见设计模式总结</title>
-      <link href="2024/03/08/%E5%B8%B8%E8%A7%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/"/>
-      <url>2024/03/08/%E5%B8%B8%E8%A7%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93/</url>
-      
-        <content type="html"><![CDATA[<h1 id="常见设计模式总结"><a href="#常见设计模式总结" class="headerlink" title="常见设计模式总结"></a>常见设计模式总结</h1><p><img src="https://cdn.jsdelivr.net/gh/GuoXianSen/pic-bed@main/imgs/202410040133406.png" alt="eded52fd-c04c-47c2-b15a-188cfcb95dde"></p><h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><h2 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h2><p>双重锁检查法单例模式</p><h2 id="策略模式"><a href="#策略模式" class="headerlink" title="策略模式"></a>策略模式</h2>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 设计模式 </tag>
             
         </tags>
       

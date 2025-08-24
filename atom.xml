@@ -6,7 +6,7 @@
   <link href="https://guoxiansen.github.io/atom.xml" rel="self"/>
   
   <link href="https://guoxiansen.github.io/"/>
-  <updated>2025-08-03T15:02:57.547Z</updated>
+  <updated>2025-08-24T03:01:21.062Z</updated>
   <id>https://guoxiansen.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java Stream流用法</title>
+    <link href="https://guoxiansen.github.io/2025/08/24/Java-Stream%E6%B5%81%E7%94%A8%E6%B3%95/"/>
+    <id>https://guoxiansen.github.io/2025/08/24/Java-Stream%E6%B5%81%E7%94%A8%E6%B3%95/</id>
+    <published>2025-08-24T02:50:12.000Z</published>
+    <updated>2025-08-24T03:01:21.062Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Stream流介绍"><a href="#Stream流介绍" class="headerlink" title="Stream流介绍"></a>Stream流介绍</h1><p>是一个来自数据源的元素源的元素队列并支持聚合操作</p><h2 id="作用范围"><a href="#作用范围" class="headerlink" title="作用范围"></a>作用范围</h2><ul><li>数组 <code>Arrays.stream()</code></li><li>单列集合Collection</li><li>双列集合Map</li><li>**Stream.of()**（直接构造流）</li><li><strong>文件行流</strong>（<code>Files.lines()</code>）</li><li><strong>函数生成流</strong>（<code>Stream.generate()</code> / <code>Stream.iterate()</code>）</li></ul><h2 id="中间操作"><a href="#中间操作" class="headerlink" title="中间操作"></a>中间操作</h2><ul><li>过滤 filter</li><li>映射 map flatMap</li><li>排序</li><li>去重</li><li>截断/跳过</li></ul><h2 id="终止操作"><a href="#终止操作" class="headerlink" title="终止操作"></a>终止操作</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Stream流介绍&quot;&gt;&lt;a href=&quot;#Stream流介绍&quot; class=&quot;headerlink&quot; title=&quot;Stream流介绍&quot;&gt;&lt;/a&gt;Stream流介绍&lt;/h1&gt;&lt;p&gt;是一个来自数据源的元素源的元素队列并支持聚合操作&lt;/p&gt;
+&lt;h2 id=&quot;作用范围&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="Java" scheme="https://guoxiansen.github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>刷题计划Java版</title>
@@ -465,29 +488,6 @@
     
     
     <category term="Python" scheme="https://guoxiansen.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常见限流算法</title>
-    <link href="https://guoxiansen.github.io/2024/03/25/%E5%B8%B8%E8%A7%81%E9%99%90%E6%B5%81%E7%AE%97%E6%B3%95/"/>
-    <id>https://guoxiansen.github.io/2024/03/25/%E5%B8%B8%E8%A7%81%E9%99%90%E6%B5%81%E7%AE%97%E6%B3%95/</id>
-    <published>2024-03-25T00:40:04.000Z</published>
-    <updated>2024-09-29T06:07:52.109Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/GuoXianSen/pic-bed@main/imgs/202403250840747.png" alt="image-20240325084030703"></p><h1 id="常见限流算法"><a href="#常见限流算法" class="headerlink" title="常见限流算法"></a>常见限流算法</h1><p>限流算法主要是为了防止系统过载或者应对突发流量，是一种用于控制数据流速度的技术。主要包括下面四种方法：</p><ul><li>固定窗口限流算法</li><li>滑动窗口限流算法</li><li>漏桶限流算法</li><li>令牌桶限流算法</li></ul><h2 id="滑动窗口限流算法"><a href="#滑动窗口限流算法" class="headerlink" title="滑动窗口限流算法"></a>滑动窗口限流算法</h2><p>有时候用户的一些无意义或者非法操作，例如频繁的发送短信、频繁的修改个人信息等操作就是无意义或者非法的，因此我们要针对这些操作进行限流。</p><p>限流的主要核心思路就是使用redis的zset结合滑动窗口限流算法，</p><p>针对这些行为，我设计了一个通用的接口，思路上是使用时间窗口限流算法，具体实现我使用zset进行的。</p><p>比如用户五分钟内只能发送三条验证码，于是就将用户发送短信的行为设计为redis的key，格式为：</p><p><strong>场景:行为:用户唯一标识</strong>，zset的score分数值为时间戳，value值也是时间戳。</p><p>具体的流程为：</p><ul><li><p>当用户每次发生这样的限流行为，我就会在Redis中进行记录，</p></li><li><p>在业务处理中，使用Redis的api进行查询，本质上就是调用了Redis的<code>zcount</code>命令去统计，传入开始score值和结束score值，我们以当前时间戳作为结束分值，然后使用当前时间去减去限流时间，例如五分钟，求出五分钟之前的时间戳，于是根据这两个时间戳作为score分值，查询这个范围中限流行为的发生次数，判断该行为一共触发了几次。</p></li><li><p>后续的业务中，就根据不同的场景和需要进行校验。</p></li></ul><h2 id="漏桶算法"><a href="#漏桶算法" class="headerlink" title="漏桶算法"></a>漏桶算法</h2><p><img src="http://xiaobaoqiu.github.io/images/guava/rate-limit1.png" alt="img"></p><p>漏铜算法的原理就是有一个容量固定的漏洞，会以一定的速度注入水流（指的是请求的流量），同时以一定的出水速度流出（指的是处理请求的速度），如果漏桶装满了，那么剩余的请求就会抛弃不再处理了。</p><h2 id="令牌桶算法"><a href="#令牌桶算法" class="headerlink" title="令牌桶算法"></a>令牌桶算法</h2><p>令牌桶算法控制令牌生成的速度，取令牌的速度不进行控制</p><p><img src="https://cdn.jsdelivr.net/gh/GuoXianSen/pic-bed@main/imgs/202404280947793.png" alt="image-20240428094748070"></p><p><img src="https://cdn.jsdelivr.net/gh/GuoXianSen/pic-bed@main/imgs/202404280929751.jpeg" alt="img"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/GuoXianSen/pic-bed@main/imgs/202403250840747.png&quot; alt=&quot;image-20240325084030703&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;常见限流算法</summary>
-      
-    
-    
-    
-    
-    <category term="限流算法" scheme="https://guoxiansen.github.io/tags/%E9%99%90%E6%B5%81%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
